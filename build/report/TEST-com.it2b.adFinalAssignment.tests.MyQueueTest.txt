@@ -1,0 +1,12 @@
+Testsuite: com.it2b.adFinalAssignment.tests.MyQueueTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0 sec
+
+	Caused an ERROR
+com.it2b.adFinalAssignment.tests.MyQueueTest
+java.lang.ClassNotFoundException: com.it2b.adFinalAssignment.tests.MyQueueTest
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:582)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:185)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:496)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:292)
+

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="RyzenMint" name="com.it2b.adFinalAssignment.tests.QuickSortTest" skipped="0" tests="1" time="0.102" timestamp="2018-04-09T13:53:00">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="env.SESSION_MANAGER" value="local/RyzenMint:@/tmp/.ICE-unix/2687,unix/RyzenMint:/tmp/.ICE-unix/2687" />
+    <property name="env.LIBOVERLAY_SCROLLBAR" value="0" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="os.name" value="Linux" />
+    <property name="env.PWD" value="/home/jannis" />
+    <property name="sun.desktop" value="gnome" />
+    <property name="env.LANG" value="de_DE.UTF-8" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/home/jannis/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840" />
+    <property name="java.runtime.version" value="9.0.4+11" />
+    <property name="env.QT_LINUX_ACCESSIBILITY_ALWAYS_ON" value="1" />
+    <property name="env.DEFAULTS_PATH" value="/usr/share/gconf/cinnamon.default.path" />
+    <property name="env.XDG_VTNR" value="7" />
+    <property name="env.DISPLAY" value=":0" />
+    <property name="env.GJS_DEBUG_TOPICS" value="JS ERROR;JS LOG" />
+    <property name="user.name" value="jannis" />
+    <property name="env.USER" value="jannis" />
+    <property name="env.SHELL" value="/bin/bash" />
+    <property name="env.DESKTOP_SESSION" value="cinnamon" />
+    <property name="env.XDG_DATA_DIRS" value="/usr/share/cinnamon:/usr/share/gnome:/home/jannis/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share" />
+    <property name="env.GJS_DEBUG_OUTPUT" value="stderr" />
+    <property name="env.XDG_CURRENT_DESKTOP" value="X-Cinnamon" />
+    <property name="env.PATH" value="/home/jannis/.local/share/umake/bin:/home/jannis/bin:/home/jannis/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-9-oracle/bin:/usr/lib/jvm/java-9-oracle/db/bin" />
+    <property name="user.language" value="de" />
+    <property name="env.XDG_SESSION_DESKTOP" value="cinnamon" />
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-9-oracle/lib" />
+    <property name="ant.project.default-target" value="build" />
+    <property name="ant.project.name" value="AD_FinalAssignment" />
+    <property name="java.vm.compressedOopsMode" value="Zero based" />
+    <property name="env.CINNAMON_VERSION" value="3.6.7" />
+    <property name="java.version" value="9.0.4" />
+    <property name="user.timezone" value="" />
+    <property name="env.DBUS_SESSION_BUS_ADDRESS" value="unix:abstract=/tmp/dbus-OojJsi0vxF,guid=20c01ed3b442abf054c001f85acb09ec" />
+    <property name="env.QT_STYLE_OVERRIDE" value="gtk" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="env.SSH_AGENT_PID" value="2750" />
+    <property name="env.DERBY_HOME" value="/usr/lib/jvm/java-9-oracle/db" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="env.SHLVL" value="0" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.class.version" value="53.0" />
+    <property name="env.GNOME_DESKTOP_SESSION_ID" value="this-is-deprecated" />
+    <property name="env.GDMSESSION" value="cinnamon" />
+    <property name="user.country" value="DE" />
+    <property name="java.home" value="/usr/lib/jvm/java-9-oracle" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="ant.file.AD_FinalAssignment" value="/home/jannis/eclipse-workspace/AD_FinalAssignment/build.xml" />
+    <property name="os.version" value="4.13.0-38-generic" />
+    <property name="ant.file" value="/home/jannis/eclipse-workspace/AD_FinalAssignment/build.xml" />
+    <property name="env.LOGNAME" value="jannis" />
+    <property name="env.J2REDIR" value="/usr/lib/jvm/java-9-oracle" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="9.0.4+11" />
+    <property name="env.LANGUAGE" value="de_DE" />
+    <property name="ant.library.dir" value="/home/jannis/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib" />
+    <property name="env.XDG_SESSION_PATH" value="/org/freedesktop/DisplayManager/Session0" />
+    <property name="junit.output.dir" value="junit" />
+    <property name="env.QT_QPA_PLATFORMTHEME" value="qgnomeplatform" />
+    <property name="env.XDG_SESSION_TYPE" value="x11" />
+    <property name="env.JAVA_HOME" value="/usr/lib/jvm/java-9-oracle" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+    <property name="env.OXYGEN_DISABLE_INNER_SHADOWS_HACK" value="1" />
+    <property name="env.GDM_LANG" value="de_DE" />
+    <property name="target" value="9" />
+    <property name="user.home" value="/home/jannis" />
+    <property name="env.GTK_OVERLAY_SCROLLING" value="1" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.file.type.AD_FinalAssignment" value="file" />
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="env.GIO_LAUNCHED_DESKTOP_FILE" value="/home/jannis/.local/share/applications/alacarte-made-daa7f300-333f-11e8-b3b4-88d7f641bfa8.desktop" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="env.XDG_SEAT" value="seat0" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner com.it2b.adFinalAssignment.tests.QuickSortTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.OutErrSummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/jannis/eclipse-workspace/AD_FinalAssignment/junit/TEST-com.it2b.adFinalAssignment.tests.QuickSortTest.xml crashfile=/home/jannis/eclipse-workspace/AD_FinalAssignment/junitvmwatcher1322938108538388617.properties propsfile=/home/jannis/eclipse-workspace/AD_FinalAssignment/junit8654042514637294552.properties" />
+    <property name="java.class.path" value="/home/jannis/eclipse-workspace/AD_FinalAssignment/bin:/home/jannis/.p2/pool/plugins/org.junit_4.12.0.v201504281640/junit.jar:/home/jannis/.p2/pool/plugins/org.hamcrest.core_1.3.0.v201303031735.jar:/home/jannis/eclipse-workspace/AD_FinalAssignment/libs/commons-csv-1.5.jar:/home/jannis/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-launcher.jar:/home/jannis/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant.jar:/home/jannis/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-junit.jar:/home/jannis/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant-junit4.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.1 compiled on February 2 2017" />
+    <property name="env.XDG_SESSION_ID" value="c2" />
+    <property name="jdk.debug" value="release" />
+    <property name="env.QT_ACCESSIBILITY" value="1" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="java.vm.specification.version" value="9" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="env.HOME" value="/home/jannis" />
+    <property name="debuglevel" value="source,lines,vars" />
+    <property name="env.ANT_HOME" value="/home/jannis/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840" />
+    <property name="env.XDG_SEAT_PATH" value="/org/freedesktop/DisplayManager/Seat0" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/" />
+    <property name="env.SSH_AUTH_SOCK" value="/run/user/1000/keyring/ssh" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="env.XDG_RUNTIME_DIR" value="/run/user/1000" />
+    <property name="user.dir" value="/home/jannis/eclipse-workspace/AD_FinalAssignment" />
+    <property name="env.XAUTHORITY" value="/home/jannis/.Xauthority" />
+    <property name="env.MANDATORY_PATH" value="/usr/share/gconf/cinnamon.mandatory.path" />
+    <property name="env.GDK_SCALE" value="1" />
+    <property name="env.GTK_MODULES" value="gail:atk-bridge" />
+    <property name="env.J2SDKDIR" value="/usr/lib/jvm/java-9-oracle" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="env.GDK_CORE_DEVICE_EVENTS" value="1" />
+    <property name="basedir" value="/home/jannis/eclipse-workspace/AD_FinalAssignment" />
+    <property name="env.XDG_GREETER_DATA_DIR" value="/var/lib/lightdm-data/jannis" />
+    <property name="ant.java.version" value="9" />
+    <property name="ant.core.lib" value="/home/jannis/.p2/pool/plugins/org.apache.ant_1.10.1.v20170504-0840/lib/ant.jar" />
+    <property name="source" value="9" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="env.GIO_LAUNCHED_DESKTOP_FILE_PID" value="6765" />
+    <property name="java.specification.version" value="9" />
+    <property name="env.XDG_CONFIG_DIRS" value="/etc/xdg/xdg-cinnamon:/etc/xdg" />
+    <property name="ant.project.invoked-targets" value="build" />
+  </properties>
+  <testcase classname="com.it2b.adFinalAssignment.tests.QuickSortTest" name="testArraySorting" time="0.0" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project AD_FinalAssignment">
+    
+	<!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="build/"/>
+    <property name="dir.workspace" value="."/>
+    <property name="dir.jarfile" value="${dir.buildfile}"/>
+	<property name="dir.report" value="report/" />
+    
+	<path id="junit.class.path">
+		<pathelement location="${dir.workspace}bin/com/it2b/adFinalAssignment"/>
+		<pathelement location="${dir.workspace}bin/com/it2b/adFinalAssignment/algos"/>
+	    <pathelement location="${dir.workspace}bin/com/it2b/adFinalAssignment/tests"/>
+	</path>
+	
+	<target name="junit">
+		<mkdir dir="${dir.buildfile}/${dir.report}"/>	
+		<junit printsummary="yes" fork="no" haltonfailure="no">
+			<classpath>
+				<pathelement location="${dir.workspace}bin/com/it2b/adFinalAssignment/"/>
+				<pathelement location="${dir.workspace}bin/com/it2b/adFinalAssignment/algos/"/>
+			    <pathelement location="${dir.workspace}bin/com/it2b/adFinalAssignment/tests/"/>
+				<pathelement location="${dir.workspace}src/com/it2b/adFinalAssignment/tests/"/>
+				<pathelement location="${dir.workspace}src/com/it2b/adFinalAssignment/algos/"/>
+		        <pathelement path="${dir.workspace}/libs/junit-4.12.jar"/>
+		    </classpath>
+		
+		    <formatter type="plain"/>
+		
+		    <batchtest fork="yes" todir="${dir.buildfile}/${dir.report}">
+		        <fileset dir="${dir.workspace}/src">
+		            <include name="**/*Test*"/>
+		        </fileset>
+		    </batchtest>
+		</junit>
+	</target>
+	
+	<target name="create_run_jar" depends="junit">
+		<jar destfile="${dir.jarfile}/RunMe.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="com.it2b.adFinalAssignment.FinalAssignment"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="${dir.workspace}/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.workspace}/libs/apachecsv/commons-csv-1.5.jar"/>
+        </jar>
+    </target>
+	
+	
+	
+</project>
