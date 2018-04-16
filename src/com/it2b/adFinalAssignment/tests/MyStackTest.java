@@ -51,5 +51,15 @@ public class MyStackTest {
 		stack.push(2);
 		stack.push(3);
 		assertEquals(stack.search(2), 1);
+		assertEquals(stack.search(5), -1);
+	}
+	
+	@Test
+	public void testWithEmptyStack() {
+		
+		MyStack<Integer> emptyStack = new MyStack<Integer>();
+		
+		assertEquals(emptyStack.peek(), null);
+		assertEquals(emptyStack.pop(), null);
 	}
 }

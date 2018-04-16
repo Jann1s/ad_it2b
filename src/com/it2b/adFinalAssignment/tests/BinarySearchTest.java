@@ -19,9 +19,15 @@ public class BinarySearchTest {
 	}
 
 	@Test
-	void testBinarySearch() {
-		int position = searcher.search(array, Integer.valueOf(3), 0, array.length);
+	public void testBinarySearch() {
+		int mid = searcher.search(array, Integer.valueOf(3), 0, array.length);
+		int before = searcher.search(array, Integer.valueOf(1), 0, array.length);
+		int after = searcher.search(array, Integer.valueOf(5), 0, array.length);
+		int failed = searcher.search(array, Integer.valueOf(5), 10, array.length);
 		
-		assertEquals(position, 3);
+		assertEquals(mid, 3);
+		assertEquals(before, 1);
+		assertEquals(after, 5);
+		assertEquals(failed, -1);
 	}
 }

@@ -11,6 +11,7 @@ public class DoublyLinkedList<T> {
 	public DoublyLinkedList() {
 		size = 0;
 	}
+	
 	private class Node {
 		public T element;
 		public Node next;
@@ -139,6 +140,13 @@ public class DoublyLinkedList<T> {
         remove(tmp);
         return tmp.element;
     }
+    
+    public T get(int index) {
+    	
+    	Node tmp = getNode(index);
+    	return tmp.element;
+    }
+    
     //Return node at index
 	private Node getNode(int index) {
 		if (index < 0 || index >= size) {

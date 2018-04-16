@@ -1,16 +1,20 @@
 package com.it2b.adFinalAssignment.algos;
 
+import java.util.Collection;
+import java.util.List;
+
 public class QuickSort <T extends Comparable<T>> {
 	
-	private T[] arrObj;
+	private Collection<T> arrObj;
 	
 	/**
 	 * @param arr	- T array which will be sorted
 	 * @return sorted T array
 	 */
-	public T[] sort(T[] arr) {
+	public Collection<T> sort(Collection<T> arr) {
+			
 		arrObj = arr;
-		quickSortT(0, arr.length - 1);
+		quickSortT(0, arr.size() - 1);
 		return arrObj;
 	}
 	
@@ -21,26 +25,28 @@ public class QuickSort <T extends Comparable<T>> {
 	 */
 	private void quickSortT(int low, int high) {
 		
-		if (low < high) {
-            int i = low, j = high;
-            T x = arrObj[(i + j) / 2];
+		if (arrObj instanceof List) {
+			if (low < high) {
+	            int i = low, j = high;
+	            T x = ((List<T>) arrObj).get((i + j) / 2);
 
-            do {
-                while (arrObj[i].compareTo(x) < 0) i++;
-                while (x.compareTo(arrObj[j]) < 0) j--;
+	            do {
+	                while (((List<T>) arrObj).get(i).compareTo(x) < 0) i++;
+	                while (x.compareTo(((List<T>) arrObj).get(j)) < 0) j--;
 
-                if ( i <= j) {
-                    T tmp = arrObj[i];
-                    arrObj[i] = arrObj[j];
-                    arrObj[j] = tmp;
-                    i++;
-                    j--;
-                }
+	                if ( i <= j) {
+	                	T tmp = ((List<T>) arrObj).get(i);
+						((List<T>) arrObj).set(i, ((List<T>) arrObj).get(j));
+						((List<T>) arrObj).set(j, tmp);
+	                    i++;
+	                    j--;
+	                }
 
-            } while (i <= j);
+	            } while (i <= j);
 
-            quickSortT(low, j);
-            quickSortT(i, high);
-        }
+	            quickSortT(low, j);
+	            quickSortT(i, high);
+	        }
+		}
 	}
 }

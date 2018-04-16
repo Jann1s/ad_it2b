@@ -3,8 +3,8 @@ package com.it2b.adFinalAssignment;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVRecord;
 
-import com.it2b.adFinalAssignment.algos.MyStack;
-import com.it2b.adFinalAssignment.algos.QuickSort;
+import com.it2b.adFinalAssignment.algos.BubbleSort;
+import com.it2b.adFinalAssignment.algos.LinkList;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -27,74 +27,8 @@ public class FinalAssignment {
 			e.printStackTrace();
 		}
 		
-		
-		//put in here some tests of your sorting methods...
-		testQuickSort();
-		//testMyStack();
+		//put in here some code to process the lego items
 	}
-	
-	private static void testMyStack() {
-		
-		MyStack mS = new MyStack();
-		
-		System.out.println("isEmpty: " + mS.isEmpty());
-		
-		mS.push(1);
-		mS.push(3);
-		mS.push(5);
-		mS.push(8);
-		
-		System.out.println("Peek: " + mS.peek());
-		System.out.println("Got: " + mS.pop());
-		System.out.println("Got: " + mS.pop());
-		System.out.println("Got: " + mS.search(5));
-		System.out.println("Got: " + mS.search(3));
-		System.out.println("isEmpty: " + mS.isEmpty());
-	}
-	
-	private static void testQuickSort() {
-		
-		QuickSort qS = new QuickSort();
-		
-		/*
-		 * Test String sorting with Item name
-		 */
-		String[] testString = new String[items.size()];
-		
-		//Fill String array with the article names
-		for (int i = 0; i < items.size(); i++) {
-			testString[i] = items.get(i).getName();
-			System.out.println(testString[i]);
-		}
-		
-		testString = (String[])qS.sort(testString);	//Sort the array
-		System.out.println("\n\n\n!!!!!!!!!!SORTED!!!!!!!!!!!!\n\n\n");
-		
-		//Output new array
-		for (int i = 0; i < testString.length; i++) {
-			System.out.println(testString[i]);
-		}
-		
-		
-		/*
-		 * Test DOUBLE sotring with Item Pieces
-		 */
-		Double[] testDouble = new Double[items.size()];
-		
-		for (int i = 0; i < items.size(); i++) {
-			testDouble[i] = items.get(i).getPriceGBP();
-			System.out.println(testDouble[i]);
-		}
-		
-		testDouble = (Double[])qS.sort(testDouble);	//Sort the array
-		System.out.println("\n\n\n!!!!!!!!!!SORTED!!!!!!!!!!!!\n\n\n");
-		
-		//Output new array
-		for (int i = 0; i < testDouble.length; i++) {
-			System.out.println(testDouble[i]);
-		}
-	}
-	
 	
 	
 	private static void loadCSV() throws IOException {

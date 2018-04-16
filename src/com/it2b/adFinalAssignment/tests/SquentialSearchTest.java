@@ -21,6 +21,7 @@ public class SquentialSearchTest {
 	@Test
 	public void testSearch() {
 		assertEquals(searcher.search(array, Integer.valueOf(3)), 3);
+		assertEquals(searcher.search(array, Integer.valueOf(8)), -1);
 	}
 
 }
