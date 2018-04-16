@@ -30,6 +30,9 @@ public class SmartBubbleSortTest {
 		testList.add(4);
 	}
 
+	/**
+	 * test if algorithm sorts the list
+	 */
 	@Test
 	public void testSmartBubbleSort() {
 		testList = (List<Integer>) sorter.sort(testList);
@@ -43,6 +46,9 @@ public class SmartBubbleSortTest {
 		assertEquals(testList.get(6), Integer.valueOf(6));
 	}
 	
+	/**
+	 * test if algorithm works with presorted list
+	 */
 	@Test
 	public void testPreSorted() {
 		testList = new ArrayList<Integer>();

@@ -18,6 +18,9 @@ public class BinarySearchTest {
 		array = new Integer[] {0, 1, 2, 3, 4, 5, 6};
 	}
 
+	/**
+	 * Test if the search alogrithm is able to perform accordingly
+	 */
 	@Test
 	public void testBinarySearch() {
 		int mid = searcher.search(array, Integer.valueOf(3), 0, array.length);

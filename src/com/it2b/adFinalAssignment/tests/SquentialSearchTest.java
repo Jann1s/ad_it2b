@@ -18,6 +18,9 @@ public class SquentialSearchTest {
 		array = new Integer[] {0, 1, 2, 3, 4, 5, 6};
 	}
 
+	/**
+	 * test if the search algorithm works
+	 */
 	@Test
 	public void testSearch() {
 		assertEquals(searcher.search(array, Integer.valueOf(3)), 3);

@@ -54,6 +54,9 @@ public class MyStackTest {
 		assertEquals(stack.search(5), -1);
 	}
 	
+	/**
+	 * test with empty stack to cover all of the possibillities
+	 */
 	@Test
 	public void testWithEmptyStack() {
 		

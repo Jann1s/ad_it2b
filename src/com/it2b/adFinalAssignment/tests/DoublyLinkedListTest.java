@@ -16,6 +16,9 @@ public class DoublyLinkedListTest {
 		myList = new DoublyLinkedList<Integer>();
 	}
 
+	/**
+	 * Check the addLast function
+	 */
 	@Test
 	public void addLastTest() {
 		myList.addLast(2);
@@ -29,6 +32,9 @@ public class DoublyLinkedListTest {
 		assertEquals(Integer.valueOf(4), myList.get(3));
 	}
 	
+	/**
+	 * Test the addFirst() function
+	 */
 	@Test
 	public void addFirstTest() {
 		myList.addFirst(2);
@@ -42,6 +48,9 @@ public class DoublyLinkedListTest {
 		assertEquals(Integer.valueOf(4), myList.get(3));
 	}
 
+	/**
+	 * Test if the size of the list is according to the item number.
+	 */
 	@Test
 	public void sizeTest() {
 		myList.addFirst(1);
@@ -50,6 +59,9 @@ public class DoublyLinkedListTest {
 		assertEquals(2, myList.size());
 	}
 	
+	/**
+	 * Check if the list is empty or not
+	 */
 	@Test
 	public void isEmptyTest() {
 		assertEquals(true, myList.isEmpty());
@@ -59,6 +71,9 @@ public class DoublyLinkedListTest {
 		assertEquals(false, myList.isEmpty());
 	}
 	
+	/**
+	 * Test more advanced adding process to cover every line
+	 */
 	@Test
 	public void addExtendedTest() {
 		myList.add(0, 2);
@@ -70,6 +85,9 @@ public class DoublyLinkedListTest {
 		assertEquals(Integer.valueOf(3), myList.get(2));
 	}
 	
+	/**
+	 * Test removeFirst method.
+	 */
 	@Test
 	public void removeFirstTest() {
 		myList.add(0, 2);
@@ -79,6 +97,9 @@ public class DoublyLinkedListTest {
 		assertEquals(Integer.valueOf(1), myList.removeFirst());
 	}
 	
+	/**
+	 * Test removeLast method
+	 */
 	@Test
 	public void removeLastTest() {
 		myList.add(0, 2);
@@ -88,6 +109,9 @@ public class DoublyLinkedListTest {
 		assertEquals(Integer.valueOf(3), myList.removeLast());
 	}
 	
+	/**
+	 * Test remove method
+	 */
 	@Test
 	public void removeTest() {
 		myList.add(0, 2);

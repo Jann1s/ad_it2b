@@ -22,6 +22,8 @@ public class SmartBubbleSort <T extends Comparable<T>> {
 				
 				for (int i = 0; i < list - 1; i++) {
 					for (int j = 0; j < list - 1 - i; j++) {
+						
+						//If item X is bigger than item Y -> they will be swapped
 						if (((List<T>) arr).get(j).compareTo(((List<T>) arr).get(j + 1)) > 0) {
 
 							// swap elements

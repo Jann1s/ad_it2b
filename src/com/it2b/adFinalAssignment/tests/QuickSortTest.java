@@ -28,6 +28,9 @@ public class QuickSortTest {
 		testList.add(1);
 	}
 
+	/**
+	 * test if sorting algorithms sorts the list.
+	 */
 	@Test
 	public void testArraySorting() {
 		testList = (List<Integer>) qS.sort(testList);

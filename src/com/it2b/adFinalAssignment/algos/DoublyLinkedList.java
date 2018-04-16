@@ -89,23 +89,6 @@ public class DoublyLinkedList<T> {
 		size++;
 	}
 	
-	//Iterate trough the list backwards 
-	public void iterateBack() {
-		Node tmp = tail;
-		while(tmp != null) {
-			System.out.println(tmp.element);
-			tmp = tmp.prev;
-		}
-		
-	}
-	//Iterate trough the list forwards
-	public void iterateForward() {
-		 Node tmp = head;
-	        while(tmp != null){
-	            System.out.println(tmp.element);
-	            tmp = tmp.next;
-	        }
-	}
 	//Remove element at first position
     public T removeFirst() {
         if (size == 0) throw new NoSuchElementException();

@@ -22,16 +22,14 @@ public class BinarySearch <T extends Comparable<T>> {
                return mid;
            
             // If element is smaller than mid, then it can only be present in left side
-            
             if (item.compareTo(key) > 0)
             	return search(items, key, low, mid -1);
  
             // Else the element can only be present in the right side
-            
             return search(items, key, mid +1 , high);
             
         }
 	    
-        return -1;
+        return -1;	//return -1 if not found
     }
 }

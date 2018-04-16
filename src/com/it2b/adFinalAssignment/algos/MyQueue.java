@@ -12,6 +12,10 @@ private List<T> queueList;
 		queueList = new ArrayList<T>();
 	}
 	
+	/**
+	 * Check if MyQueue is empty
+	 * @return true if empty
+	 */
 	public boolean isEmpty() {
 		if (queueList.isEmpty())
 			return true;
@@ -19,6 +23,10 @@ private List<T> queueList;
 		return false;
 	}
 	
+	/**
+	 * Get next item without removing it
+	 * @return	item
+	 */
 	public T peek() {
 		
 		if (!isEmpty())
@@ -27,6 +35,10 @@ private List<T> queueList;
 			return null;
 	}
 	
+	/**
+	 * Get next item without removing it. Exception instead of null if queue is empty.
+	 * @return	item
+	 */
 	public T element() {
 		if (!isEmpty())
 			return queueList.get(queueList.size() - 1);
@@ -34,6 +46,10 @@ private List<T> queueList;
 			throw new NoSuchElementException();
 	}
 	
+	/**
+	 * get and remove item from queue
+	 * @return	item
+	 */
 	public T poll() {
 		
 		if (!isEmpty()) {
@@ -45,6 +61,10 @@ private List<T> queueList;
 			return null;
 	}
 	
+	/**
+	 * get and remove item from queue. Exception instead of null if queue is empty.
+	 * @return
+	 */
 	public T remove() {
 		
 		if (!isEmpty()) {
@@ -56,6 +76,10 @@ private List<T> queueList;
 			throw new NoSuchElementException();
 	}
 	
+	/**
+	 * @param item	- item which will be added to the queue
+	 * @return	true if item was successfully added
+	 */
 	public boolean add(T item) {
 		
 		queueList.add(item);

@@ -18,6 +18,9 @@ public class MyQueueTest {
 		queue = new MyQueue<Integer>();
 	}
 
+	/**
+	 * test if queue is empty or not
+	 */
 	@Test
 	public void isEmptyTest() {
 		assertEquals(queue.isEmpty(), true);
@@ -48,12 +51,18 @@ public class MyQueueTest {
 		assertEquals(queue.peek(), Integer.valueOf(4));
 	}
 	
+	/**
+	 * test if element will be returned
+	 */
 	@Test
 	public void elementTest() {
 		queue.add(4);
 		assertEquals(queue.element(), Integer.valueOf(4));
 	}
 	
+	/**
+	 * test if element will rise the expected exception
+	 */
 	@Test(expected = NoSuchElementException.class)
 	public void elementException() {
 		queue.element();
@@ -66,6 +75,9 @@ public class MyQueueTest {
 		assertEquals(queue.remove(), Integer.valueOf(4));
 	}
 	
+	/**
+	 * test if remove method will rise the expected exception
+	 */
 	@Test(expected = NoSuchElementException.class)
 	public void removeException() {
 		queue.remove();

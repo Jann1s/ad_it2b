@@ -18,6 +18,9 @@ public class LinkedListTest {
 		myList = new LinkList<Integer>();
 	}
 
+	/**
+	 * Test if the items will be added.
+	 */
 	@Test
 	public void addTest() {
 		myList.addLast(4);
@@ -33,11 +36,17 @@ public class LinkedListTest {
 		assertEquals(Integer.valueOf(10), myList.get(4));
 	}
 	
+	/**
+	 * Test if IndexOutOfBoundsException will be triggered
+	 */
 	@Test(expected = IndexOutOfBoundsException.class)
 	public void getOutOfBounds() {
 		myList.get(3);
 	}
 	
+	/**
+	 * test remove method in advanced way to cover all possibilities
+	 */
 	@Test
 	public void removeTest() {
 		myList.addLast(1);

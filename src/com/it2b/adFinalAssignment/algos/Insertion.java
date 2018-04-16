@@ -5,7 +5,11 @@ import java.util.List;
 
 public class Insertion <T extends Comparable<T>> {
 		
-	//STRING area
+	
+	/**
+	 * @param arr	- Collection List with the items that should be sorted
+	 * @return	sorted collection
+	 */
 	public Collection<T> sort(Collection<T> arr) {
 		
 		if (arr instanceof List) {

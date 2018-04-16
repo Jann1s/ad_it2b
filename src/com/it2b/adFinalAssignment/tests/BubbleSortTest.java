@@ -29,6 +29,9 @@ public class BubbleSortTest {
 		testList.add(4);
 	}
 
+	/**
+	 * Test if the bubble sort algorithm sorts the defined list
+	 */
 	@Test
 	public void testBubbleSort() {
 		testList = (List<Integer>) sorter.sort(testList);

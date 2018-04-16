@@ -11,6 +11,10 @@ public class MyStack <T extends Comparable<T>>{
 		stackList = new ArrayList<T>();
 	}
 	
+	/**
+	 * check if MyStack is empty
+	 * @return true if stack is empty
+	 */
 	public boolean isEmpty() {
 		if (stackList.isEmpty())
 			return true;
@@ -18,6 +22,10 @@ public class MyStack <T extends Comparable<T>>{
 		return false;
 	}
 	
+	/**
+	 * Get next item without removing it
+	 * @return	item
+	 */
 	public T peek() {
 		
 		if (!isEmpty())
@@ -26,6 +34,10 @@ public class MyStack <T extends Comparable<T>>{
 		return null;
 	}
 	
+	/**
+	 * get and remove item from stack
+	 * @return	item
+	 */
 	public T pop() {
 		
 		if (!isEmpty()) {
@@ -37,12 +49,20 @@ public class MyStack <T extends Comparable<T>>{
 		return null;
 	}
 	
+	/**
+	 * @param item	- item which will be added to the stack
+	 * @return	added item
+	 */
 	public T push(T item) {
 		
 		stackList.add(item);
 		return item;
 	}
 	
+	/**
+	 * @param item	- item which should be searched for
+	 * @return	index of item
+	 */
 	public int search(T item) {
 		
 		if (!isEmpty()) {

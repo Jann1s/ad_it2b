@@ -11,6 +11,10 @@ public class LinkList <T extends Comparable<T>> {
 		size = 0;
 	}
 	
+	
+	/**
+	 * @param element	- item that should be added
+	 */
 	public void addFirst(T element) {
 		Node<T> tNode = new Node<T>(element);
 		
@@ -19,6 +23,9 @@ public class LinkList <T extends Comparable<T>> {
 		size++;
 	}
 	
+	/**
+	 * @param element	- item that should be added
+	 */
 	public void addLast(T element) {
 		Node<T> tNode = new Node<T>(element);
 		
@@ -38,21 +45,9 @@ public class LinkList <T extends Comparable<T>> {
 		size++;
 	}
 	
-	/*
-	public T remove(int index) {
-		if (index < 0 || index > size) 
-			throw new IndexOutOfBoundsException();
-		
-		if (index > 1) {
-			index--;
-		}
-		
-		Node<T> tmp = getNode(index);
-        tmp.setNext(tmp.getNext().getNext());
-        return tmp.getNext().getValue();
-	}
-	*/
-	
+	/**
+	 * @return	the deleted value
+	 */
 	public T remove() {
 		
 		Node<T> tmp = head;
@@ -67,20 +62,19 @@ public class LinkList <T extends Comparable<T>> {
 		return tmp.getValue();
 	}
 	
-	/*
-	public T remove(int index) {
-    	if (index < 0 || index > size) 
-			throw new IndexOutOfBoundsException();
-    	Node<T> tmp = getNode(index);
-        remove(tmp);
-        return tmp.getValue();
-    }
-    */
 	
+	/**
+	 * @param index	- index of item
+	 * @return	selected value
+	 */
 	public T get(int index) {
 		return getNode(index).getValue();
 	}
 	
+	/**
+	 * @param index	- index of item
+	 * @return	selected value
+	 */
 	private Node<T> getNode(int index) {
 		if (index < 0 || index >= size) {
 			throw new IndexOutOfBoundsException();
@@ -92,6 +86,9 @@ public class LinkList <T extends Comparable<T>> {
 		return tmp;
 	}
 	
+	/**
+	 * private Node class as storage of every added item
+	 */
 	private class Node<T> {
 
 		private T value;

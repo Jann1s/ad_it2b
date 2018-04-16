@@ -29,6 +29,9 @@ public class InsertionTest {
 		testList.add(4);
 	}
 
+	/**
+	 * Test if the list will be sorted.
+	 */
 	@Test
 	public void testInsertionSort() {
 		testList = (List<Integer>) sorter.sort(testList);
